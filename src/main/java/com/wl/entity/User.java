@@ -13,7 +13,6 @@ import java.util.Date;
  * @author WeiLin
  * @version 1.0
  */
-@Entity
 public class User implements Serializable {
 
     private static final long serialVersionUID = -2784756371645091409L;
@@ -21,44 +20,38 @@ public class User implements Serializable {
     /**
      * id
      */
-    @Id
-    @GeneratedValue
     private Long id;
 
     /**
      * 用户名
      */
-    @Column(nullable = false, unique = true)
     private String userName;
 
     /**
      * 密码
      */
-    @Column(nullable = false)
     private String password;
 
     /**
      * 电话
      */
-    @Column(nullable = false, unique = true)
     private String phone;
 
     /**
      * 昵称
      */
-    @Column(nullable = true, unique = true)
     private String nickName;
 
     /**
      * 注册时间
      */
-    @Column(nullable = false)
     private Date regTime;
 
     public User() {
     }
 
-    public User(String userName, String password, String phone, String nickName, Date regTime) {
+    public User(Long id, String userName, String password, String phone, String nickName, Date regTime) {
+        this.id = id;
         this.userName = userName;
         this.password = password;
         this.phone = phone;
