@@ -1,4 +1,4 @@
-package com.wl.dao;
+package com.wl.dao.springboot;
 
 import com.wl.entity.User;
 import org.apache.ibatis.annotations.Param;

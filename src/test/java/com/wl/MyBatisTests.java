@@ -1,6 +1,6 @@
 package com.wl;
 
-import com.wl.dao.UserDao;
+import com.wl.dao.springboot.UserDao;
 import com.wl.entity.User;
 import org.junit.Assert;
 import org.junit.Test;
