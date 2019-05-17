@@ -92,6 +92,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <fork>true</fork>
+                    <mainClass>com.wl.ShiroDemoApplication</mainClass>
                 </configuration>
             </plugin>
 

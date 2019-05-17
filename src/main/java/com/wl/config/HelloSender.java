@@ -21,4 +21,17 @@ public class HelloSender {
         System.out.println("Sender :" + context);
         rabbitTemplate.convertAndSend("hello", context);
     }
+
+    public void send1(){
+        String context = "hi,i am message 1";
+        System.out.println("Sender :" + context);
+        rabbitTemplate.convertAndSend("exchange","topic.message",context);
+    }
+
+    public void send2(){
+        String context = "hi,i am message 2";
+        System.out.println("Sender :" + context);
+        rabbitTemplate.convertAndSend("exchange","topic.messages",context);
+    }
+
 }
