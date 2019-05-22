@@ -20,4 +20,16 @@ public class RabbitMqTests {
             helloSender.send(i + "");
         }
     }
+
+
+    @Test
+    public void TopicTest() throws Exception {
+        helloSender.send1();
+        helloSender.send2();
+    }
+
+    @Test
+    public void FanoutTest() throws Exception {
+        helloSender.sendFanout();
+    }
 }

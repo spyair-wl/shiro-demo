@@ -8,6 +8,7 @@ import java.util.Date;
 
 /**
  * sender - hello
+ * @author Administrator
  */
 @Component
 public class HelloSender {
@@ -32,6 +33,12 @@ public class HelloSender {
         String context = "hi,i am message 2";
         System.out.println("Sender :" + context);
         rabbitTemplate.convertAndSend("exchange","topic.messages",context);
+    }
+
+    public void sendFanout(){
+        String context = "hi,fanout msg ";
+        System.out.println("Sender : " + context);
+        rabbitTemplate.convertAndSend("fanoutExchange","",context);
     }
 
 }
