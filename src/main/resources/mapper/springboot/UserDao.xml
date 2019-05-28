@@ -9,4 +9,13 @@
             WHERE
             id = #{id}
     </select>
+
+    <select id="findByUsername"  resultType="com.wl.entity.User">
+          select
+          *
+          from
+          user
+          WHERE
+          username = #{username};
+    </select>
 </mapper>   

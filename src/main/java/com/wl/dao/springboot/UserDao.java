@@ -14,4 +14,6 @@ import org.springframework.stereotype.Repository;
 public interface UserDao {
 
     User getById(@Param("id") Long id);
+
+    User findByUsername(@Param("username") String username);
 }

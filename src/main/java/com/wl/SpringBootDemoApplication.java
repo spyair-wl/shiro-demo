@@ -8,10 +8,10 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
-public class ShiroDemoApplication extends SpringBootServletInitializer {
+public class SpringBootDemoApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
-        SpringApplication.run(ShiroDemoApplication.class, args);
+        SpringApplication.run(SpringBootDemoApplication.class, args);
     }
 
 
